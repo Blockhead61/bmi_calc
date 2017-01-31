@@ -13,38 +13,35 @@
 <body>
 
 <form name=fn>
-	<table class=main>
-		<tr colspan="2">
-			<td id=$msm>Measuring System<td>
-				<input type="radio" name="msm" id="msm1" value="metric" checked="checked" onclick=msystem(); />
+	<h2>BMI Calculator</h2>
+	<div class="col-md-2">
+	<div class="text__panel--grey">
+		<h3 id="yourResult">What&rsquo;s your BMI</h3><h4 id="bmi">&nbsp;</h4></h4><div id="youAre"><p><strong>Are you the right weight for your height?</strong></p>This can be done by calculating your BMI (body mass index).<p><p>BMI is a good predictor of how likely you are to suffer from health-related problems</p> </div>
+	</div>
+	</div>
+		<div class="col-md-2">
+			
+			<div class="col-md-1" id=$msm>
+				<input type="radio" name="msm" id="msm1" value="metric" onclick=msystem(); />
 				<label for="msm1">Metric (kg)</label>
 				<input type="radio" name="msm" id="msm2" value="us" onclick=msystem(); />
-				<label for="msm2">Imperial (lbs)</label>
-			</td>
-		</tr>
-		<tr>
-			<td colspan=2>Height</td>
-		</tr>
-		<tr>
-			<td><input type="number" id="hm"><span id="thm"> m</span></td>
-			<td><input type="number" id="hi"><span id="thi"> in</span></td>
-		</tr>
-		<tr>
-			<td colspan=2>Weight </td>
-		</tr>
-		<tr>
-			<td><input type="number" id="wm"><span id=twm> kg</span></td>
-			<td><input type="number" id="wi"><span id=twl> lbs</span></td>
-		</tr>
-		<tr>
-			<td><button type=reset>Reset</button></td>
-			<td><button id="calc" type=button onclick='bmass();'>Submit</button></td>
-		</tr>
-		<tr>
-            <td><h3 id="yourResult">What&rsquo;s your BMI</h3><h4 id="bmi">&nbsp;</h4></h4><div id="youAre"><p><strong>Are you the right weight for your height?</strong></p>This can be done by calculating your BMI (body mass index).<p><p>BMI is a good predictor of how likely you are to suffer from health-related problems</p> </div></td>
-		</tr>
-		
-	</table>
+				<label for="msm2">Imperial (lbs)</label>				
+			</div>
+			<div class="calculator">
+			<div class="col-md-1">Height</div>			
+			<div class="col-md-2"><input type="number" id="hm"><span id="thm"> m</span></div>
+			<div class="col-md-2"><input type="number" id="hi"><span id="thi"> in</span></div>
+			<div class="row">
+			<div class="col-md-1">Weight</div>
+			<div class="col-md-2"><input type="number" id="wm"><span id=twm> kg</span></div>
+			<div class="col-md-2"><input type="number" id="wi"><span id=twl> lbs</span></div>
+		</div>
+			<div class="row clearfix height1em">
+			<div class="col-md-2"><button type=reset>Reset</button></div>			
+			<div class="col-md-2"><button id="calc" type=button onclick='bmass();'>Submit</button></div>	
+		</div>		
+		</div>	
+		</div>
 </form>
 
 <!--        <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>--> 
