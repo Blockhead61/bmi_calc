@@ -20,8 +20,9 @@ form[name=fn] {
     width: 100%;
 }
 form[name=fn] .col-md-2 span {
-    vertical-align: middle;
+	float:left;
     line-height: 2.4;
+    vertical-align: middle;
 }
 form[name=fn] input {
 	float:left;
@@ -69,7 +70,7 @@ button#calc,button[type="reset"] {
 input#hm, input#hi, input#wm, input#wi {
     line-height: normal;
     padding: 1em .5em;
-    width: 71px;
+    width: 60px;
 }
 h4#bmi {
     line-height: 0;
@@ -86,7 +87,7 @@ h4#bmi {
     display: table-row;
 }
 
-.row.clearfix.height1em.tablerow .col-md-2 {
+.row.clearfix.height1em.tablerow >.col-md-2 {
     display: table-cell;
 }
 /* --- From biz global --- */
@@ -110,13 +111,15 @@ h4#bmi {
 }
 .row.clearfix.height2em {
 	margin-top:2em;
+	display:block;
 }
 .row.clearfix.height1em {
 	margin-top:1em;
+	display:block;
 }
-form[name=fn] .calculator .col-md-2 {
+/*form[name=fn] .calculator .col-md-2 {
 	float:none;
-}
+}*/
 form[name=fn] .calculator .col-md-1 {
 	clear:both;
 	width:100%;
@@ -125,13 +128,14 @@ form[name=fn] .calculator .col-md-1 {
     padding: 4%;
 }
 
-.row.clearfix.height1em.tablerow .col-md-2 {
+.row.clearfix.height1em.tablerow >.col-md-2 {
     display: table-cell;
 }
 @media screen and (max-width:1024px) {
-	.row.clearfix.height1em.tablerow {
+	
+	.row.clearfix.height1em.tablerow,.row.clearfix.height1em {
 	    display: block;
-		
+		width:100%;
 	}
 
 	.row.clearfix.height1em.tablerow .col-md-2 {
