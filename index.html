@@ -11,7 +11,8 @@
 <link rel="stylesheet" href="assets/css/bmicalc.css">
 </head>
 <body>
-
+	<div class="row clearfix height1em tablerow">
+<div class="col-md-2">
 <form name=fn>
 	<h2>BMI Calculator</h2>
 	<div class="col-md-2">
@@ -28,10 +29,12 @@
 				<label for="msm2">Imperial (lbs)</label>				
 			</div>
 			<div class="calculator">
+				<div class="row clearfix height1em">
 			<div class="col-md-1">Height</div>			
 			<div class="col-md-2"><input type="number" id="hm"><span id="thm"> m</span></div>
 			<div class="col-md-2"><input type="number" id="hi"><span id="thi"> in</span></div>
-			<div class="row">
+		</div>
+			<div class="row clearfix height1em">
 			<div class="col-md-1">Weight</div>
 			<div class="col-md-2"><input type="number" id="wm"><span id=twm> kg</span></div>
 			<div class="col-md-2"><input type="number" id="wi"><span id=twl> lbs</span></div>
@@ -43,7 +46,11 @@
 		</div>	
 		</div>
 </form>
-
+</div>
+<div class="col-md-2">
+	<img src="http://asset1.cxnmarksandspencer.com/is/image/mands/820c3a75a7de8afc08d692d1f294bf215b9e6869?$editorial_600x400$">
+</div>
+</div>
 <!--        <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>--> 
 <script src="assets/js/bmi-opt1.js"></script>
 </body>
