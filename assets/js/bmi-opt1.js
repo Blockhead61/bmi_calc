@@ -9,7 +9,7 @@ elements.push(element);
 }
 var metrichunit = document.getElementById( 'hi' ),
 	metricwunit = document.getElementById( 'wi' ),
-	metrichunitsml = document.getElementById( 'thi' );
+	metrichunitsml = document.getElementById( 'thi' ),
 	metricwunitsml = document.getElementById( 'twl' );
 
 window.onload = function() {
@@ -19,7 +19,7 @@ metrichunitsml.style.display  = 'none';
 metricwunitsml.style.display  = 'none';
 document.getElementById("msm1").checked = true;
 }
-function msystem() {
+document.addEventListener('click', function() { 
 	
 	if (document.getElementById("msm1").checked === true) {
         $('thm').innerHTML = ' m';
@@ -37,9 +37,9 @@ function msystem() {
 			metrichunitsml.style.display = 'block';
 			metricwunitsml.style.display = 'block';
 	    }
-	}
+	}, false);
  	
-function bmass (){
+document.addEventListener('click', function() { 
 var measure= document.querySelector('input[name="msm"]:checked').value,
 	ms= measure,
 	height=$('hm').value,
@@ -77,4 +77,4 @@ if ($('bmi').textContent < 18.5) {
 	you = 'You are classified as obese and your health will greatly benefit if you were able to lose weight. Being obese means that you are at increased risk of diet related diseases such as diabetes and heart disease. Look at the BMI chart to see your ideal weight range for your height. We recommend that you visit your GP to discuss losing weight safely through getting more active and a health balanced diet.<p class="bold">A healthy BMI range is between 18.5-25</p>';
 }
 youAre.innerHTML = you;
-}
+}, false);
